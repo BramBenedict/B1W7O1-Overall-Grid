@@ -1,12 +1,24 @@
-.body{
+body{
   font-family: 'Lato', sans-serif;
 
 }
 
-.grid-container{
-
+nav{
+margin-top: 20px;
 
 }
+
+a{
+text-decoration: none;
+color: black;
+font-size: 14px;
+line-height: 20px;
+margin-right: 30px;
+}
+
+
+
+
 .div {
     border: 2px solid black;
     margin-top: auto;
@@ -16,33 +28,18 @@
     background-color: lightblue;
 
 }
-  .left{
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-   }
-  .right{
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: 2px solid black;
-  }
-
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 0px;
-  background-color: #2196F3;
   padding: 1px;
   width: 1100px;
+  margin: 0 auto;
 }
 .grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  text-align: left;
   padding:10px;
   font-size: 14px;
 
@@ -53,7 +50,7 @@ h1{
   font-size: 26px;
   line-height: 30px;
   text-align: left;
-  color: black
+  color: white;
   margin-left: 30px;
 
 }
@@ -61,23 +58,29 @@ h1{
 h2{
   font-size: 20px;
   line-height: 22px;
-  grid-column-start:
+  margin-left: 10px;
+
+
 }
 
 p{
   font-size: 14px;
   line-height: 20px;
   margin: 10px;
-  color: black
+  color: black;
+
 }
 .item1 {
   grid-column: 1 / span 1;
   height: 75px;
+  background-image: url(img/header_bg.png);
+  margin-bottom: 10px;
 }
 
 .item2 {
   grid-column: 2 / span 2;
   height: 75px;
+  background-image: url(img/header_bg.png);
 }
 
 .item3 {
@@ -92,7 +95,7 @@ p{
 }
 .item5 {
   grid-column: 1 / span 1;
-
+  margin-left: 70px;
 }
 .item6 {
   grid-column: 2 / span 1;
@@ -100,9 +103,22 @@ p{
 }
 .item7 {
   grid-column: 3 / span 1;
-
+  margin-right: 70px;
 }
 .item8 {
   grid-column: 1 / span 3;
   background-image: url(img/footer_bg.png)
+}
+#slider{
+width: 300px;
+height: 150px;
+
+}
+#slide{
+  width: 300px;
+  height: 150px;
+}
+#sliden{
+  width: 300px;
+  height: 150px;
 }
